@@ -10,8 +10,8 @@ from mobitic_utils.db import (
     export_area_attraction,
     join_filosofi,
     export_active_mobiles_to_db,
-    add_rescaled_columns,
 )
+
 
 EXPORT_CONFIG = [
     {
