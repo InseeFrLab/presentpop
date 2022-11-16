@@ -7,6 +7,7 @@ import os
 # Config
 BUCKET = "projet-telmob"
 ENDPOINT_URL = "https://minio.lab.sspcloud.fr/"
+
 # KEY
 KEY_POPULATION = "cancan/population_hourly_tiles_grid50_v01.csv"
 KEY_MOBILES = "cancan/mobiles_hourly_tiles_grid50.csv"
@@ -50,11 +51,6 @@ KEY_WEIGHTING = "cancan/weighting/weighting%s.csv"
 
 # KEY FOR STATISTICS
 KEY_AGG_INTERPOLATION_ERROR = "cancan/mars2019/interpolation_error.csv"
-
-POSTGRESQL_HOST = "postgresql-908083"
-POSTGRESQL_USER = "projet-telmob"
-POSTGRESQL_PASSWORD = "6oiyh8ufhkscbbkwflwk"
-POSTGRESQL_PORT = "5432"
 
 # KEY FOR RETRIEVING DATA ENCRYPTION KEY
 VAULT_PATH = "projet-telmob/mobitic"

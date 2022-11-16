@@ -4,16 +4,11 @@ import pandas as pd
 import geopandas as gpd
 import datetime as dt
 from mobitic_utils.utils_s3 import write_pandas_s3, get_pandas_s3
-from mobitic_utils.constants import (
-    POSTGRESQL_USER,
-    POSTGRESQL_PASSWORD,
-    POSTGRESQL_HOST,
-    POSTGRESQL_PORT,
-)
+
 
 engine = create_engine(
-    f"postgresql://{POSTGRESQL_USER}:{POSTGRESQL_PASSWORD}\
-@{POSTGRESQL_HOST}:{POSTGRESQL_PORT}/defaultdb"
+    f"postgresql://{os.environ['POSTGRESQL_USER']}:{os.environ['POSTGRESQL_PASSWORD']}\
+@{os.environ['POSTGRESQL_HOST']}:{os.environ['POSTGRESQL_PORT']}/defaultdb"
 )
 
 

@@ -11,12 +11,6 @@ from shapely.geometry.multipolygon import MultiPolygon
 import pandas as pd
 import geopandas as gpd
 import datetime as dt
-from mobitic_utils.constants import (
-    POSTGRESQL_USER,
-    POSTGRESQL_PASSWORD,
-    POSTGRESQL_HOST,
-    POSTGRESQL_PORT,
-)
 from mobitic_utils.requests_s3 import (
     get_population,
     get_devices,
@@ -29,9 +23,10 @@ from mobitic_utils.requests_s3 import (
 from mobitic_utils.transforms import calculate_average_weeks, format_total_population
 from mobitic_utils.utils_s3 import write_pandas_s3
 
+
 engine = create_engine(
-    f"postgresql://{POSTGRESQL_USER}:{POSTGRESQL_PASSWORD}\
-@{POSTGRESQL_HOST}:{POSTGRESQL_PORT}/defaultdb"
+    f"postgresql://{os.environ['POSTGRESQL_USER']}:{os.environ['POSTGRESQL_PASSWORD']}\
+@{os.environ['POSTGRESQL_HOST']}:{os.environ['POSTGRESQL_PORT']}/defaultdb"
 )
 
 

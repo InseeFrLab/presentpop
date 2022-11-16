@@ -7,17 +7,13 @@ import json
 from sqlalchemy import create_engine
 from mobitic_utils.export_config import EXPORT_CONFIG
 from mobitic_utils.constants import (
-    POSTGRESQL_USER,
-    POSTGRESQL_PASSWORD,
-    POSTGRESQL_HOST,
-    POSTGRESQL_PORT,
     PATH_MARATHON,
 )
 from mobitic_utils.db import check_column_exist
 
 engine = create_engine(
-    f"postgresql://{POSTGRESQL_USER}:{POSTGRESQL_PASSWORD}\
-@{POSTGRESQL_HOST}:{POSTGRESQL_PORT}/defaultdb"
+    f"postgresql://{os.environ['POSTGRESQL_USER']}:{os.environ['POSTGRESQL_PASSWORD']}\
+@{os.environ['POSTGRESQL_HOST']}:{os.environ['POSTGRESQL_PORT']}/defaultdb"
 )
 
 
