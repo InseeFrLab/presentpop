@@ -17,7 +17,8 @@ KEY_POPULATION_CELL = (
     "cancan/hourly_resident_v1_pop_presente_w1/tables_count_variant_weights/"
 )
 KEY_FILOSOFI_HOUSEHOLD = "grilles_reduites/filosofi2016_anonyme.csv"
-KEY_FILOSOFI = "antennes/cancan/grille_filosofi_2016.csv"
+# KEY_FILOSOFI = "antennes/cancan/grille_filosofi_2016.csv"
+KEY_FILOSOFI = "antennes/cancan/grille_filosofi_2019.csv"
 KEY_IMSI_COUNT_CELL = "cancan/mars2019/hourly_imsi_cells_int_not_int.csv"
 KEY_JRC = "JRC_estimates_France/data3035_%s_Months%d.csv"
 KEY_ACTIVE_MOBILES_OLD = "cancan/active_mobiles_hourly_tiles_grid50.csv"
