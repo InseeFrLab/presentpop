@@ -1,4 +1,5 @@
 """Console script for mobitic_utils."""
+import os
 import sys
 import click
 import requests
