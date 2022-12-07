@@ -25,9 +25,9 @@ export POSTGRESQL_PORT=xxxx
 or in a Jupyter notebook:
 
 ```
-%env POSTGRESQL_HOST="xxx"
-%env POSTGRESQL_USER="xxx"
-%env POSTGRESQL_PASSWORD="xxx"
+%env POSTGRESQL_HOST=xxx
+%env POSTGRESQL_USER=xxx
+%env POSTGRESQL_PASSWORD=xxx
 %env POSTGRESQL_PORT=xxxx
 ```
 
