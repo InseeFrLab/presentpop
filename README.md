@@ -2,6 +2,32 @@
 --------
 by Milena Suarez Castillo, François Sémécurbe, Cezary Ziemlicki, Haixuan Xavier Tao and Tom Seimandi.
 
+
+Maps and Figures
+--------
+
+The maps and figures are obtained in the notebooks: `notebook/*`.
+
+The four animated figures displayed below are in the `gifs` folder and are the output of `notebook/gif_maps.ipynb`. They give the variation of present population density (persons per square kilometer), hourly within day and daily within week, at the national level and in Paris. This corresponds to an extension of Figure 13.
+
+<u>France, hourly and daily variations :</u>
+
+<p float="left">
+  <img src="gifs/france_day_densities.gif" alt="fr_day" width="400"/>
+  <img src="gifs/france_week_densities.gif" alt="fr_week" width="400"/>
+</p>
+
+<u>Paris, hourly and daily variations :</u>
+
+<p float="left">
+  <img src="gifs/paris_day_densities.gif" alt="paris_day" width="400"/>
+  <img src="gifs/paris_week_densities.gif" alt="paris_day" width="400"/>
+</p>
+
+
+Pipeline organization
+--------
+
 The pipeline is organized in several modules as follows:
 
 ![](docs/schemaPipeline.png)
@@ -64,24 +90,3 @@ Comparison metrics (Table 4 of the Journal of Official Statistics paper)
 --------
 
 The code to obtain the comparison metrics is `mobitic_utils/metrics.py`. Functions from this file were used in `notebook/table_population_density_comparison.ipynb`
-
-Maps and Figures
---------
-
-The maps and figures are obtained in the notebooks: `notebook/*`.
-
-The four animated figures displayed below are in the `gifs` folder and are the output of `notebook/gif_maps.ipynb`. They give the variation of present population density (persons per square kilometer), hourly within day and daily within week, at the national level and in Paris.
-
-<u>France, hourly and daily variations :</u>
-
-<p float="left">
-  <img src="gifs/france_day_densities.gif" alt="fr_day" width="400"/>
-  <img src="gifs/france_week_densities.gif" alt="fr_week" width="400"/>
-</p>
-
-<u>Paris, hourly and daily variations :</u>
-
-<p float="left">
-  <img src="gifs/paris_day_densities.gif" alt="paris_day" width="400"/>
-  <img src="gifs/paris_week_densities.gif" alt="paris_day" width="400"/>
-</p>
