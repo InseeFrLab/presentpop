@@ -2,14 +2,6 @@
 --------
 by Milena Suarez Castillo, François Sémécurbe, Cezary Ziemlicki, Haixuan Xavier Tao and Tom Seimandi.
 
-
-Maps and Figures
---------
-
-The maps and figures are obtained in the notebooks: `notebook/*`.
-
-The four animated figures displayed below are in the `gifs` folder and are the output of `notebook/gif_maps.ipynb`. They give the variation of present population density (persons per square kilometer), hourly within day and daily within week, at the national level and in Paris. This corresponds to an extension of Figure 13.
-
 <u>France, hourly and daily variations :</u>
 
 <p float="left">
@@ -90,3 +82,11 @@ Comparison metrics (Table 4 of the Journal of Official Statistics paper)
 --------
 
 The code to obtain the comparison metrics is `mobitic_utils/metrics.py`. Functions from this file were used in `notebook/table_population_density_comparison.ipynb`
+
+
+Maps and Figures
+--------
+
+The maps and figures are obtained in the notebooks: `notebook/*`.
+
+The four animated figures displayed above are in the `gifs` folder and are the output of `notebook/gif_maps.ipynb`. They give the variation of present population density (persons per square kilometer), hourly within day and daily within week, at the national level and in Paris. This corresponds to an extension of Figure 13.
